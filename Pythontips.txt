@@ -1,0 +1,34 @@
+python -m venv myenv
+
+.\myenv\Scripts\activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+
+Create Environment: "python -m venv myenv"
+
+Activate Environment: ".\myenv\Scripts\activate"
+
+Upgrade pip: "python -m pip install --upgrade pip"
+
+Install Requirements: "pip install -r requirements.txt"
+
+Check pip version: "python -m pip --version"
+
+Remove Microsoft Edge:
+    Press Win + X and select Windows PowerShell (Admin)
+    winget uninstall "Microsoft Edge"
+
+Code for Debugging & Logging:
+
+    import logging
+    logging.basicConfig(level=logging.DEBUG)
+    logging.debug("This is a debug message")
+
+
+List all installed packages: "pip freeze"
+
+Export installed packages to txt: "pip freeze > requirements.txt"
+
+Uninstall all from file (name of file - 123): "pip uninstall -r 123.txt -y"
+
+Delete the existing virtual environment: "Remove-Item -Recurse -Force myenv"

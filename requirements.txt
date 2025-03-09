@@ -1,0 +1,13 @@
+pandas
+numpy
+tqdm
+datetime
+matplotlib
+pendulum
+maticalgos
+pyarrow
+fastparquet
+sqlalchemy
+duckdb
+psutil
+tabulate

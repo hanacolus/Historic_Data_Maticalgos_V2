@@ -1,0 +1,49 @@
+Please generate complete Python code for data processing utilities with the following components. The code should be well-structured, modular, and optimized for performance on Windows:
+
+1. System resource management utilities:
+   - Function to detect CPU cores and memory (using psutil library)
+   - Function to calculate optimal chunk sizes based on available RAM
+   - Function to display system configuration in a readable format
+
+2. Performance monitoring:
+   - time_tracker decorator to measure execution time and memory usage
+   - Memory profiling utilities for detecting leaks during long operations
+   - CPU usage tracking during long operations with periodic reporting
+
+3. Progress tracking:
+   - Progress bar implementation for batch operations (using tqdm)
+   - Chunking utilities for large data processing with automatic size detection
+   - ETA calculations for long-running tasks with time remaining estimates
+
+4. Error handling:
+   - Context manager for proper error handling and resource cleanup
+   - Graceful shutdown mechanisms for keyboard interruptions
+   - Detailed error logging with system state capture for debugging
+
+5. File management:
+   - Consistent file naming utilities with timestamp options
+   - File path handling functions optimized for Windows
+   - Temporary file management with automatic cleanup
+
+6. Database optimization:
+   - Connection pooling and optimization for SQL-based databases
+   - Query performance monitoring with execution time tracking
+   - Parallel processing configuration based on available system resources
+
+7. Batch processing:
+   - Memory-efficient iterators for large datasets (compatible with pandas)
+   - Automatic chunking based on available memory with dynamic adjustment
+   - Resume capabilities for interrupted operations with checkpointing
+
+Required Python libraries: psutil, tqdm, pandas, numpy, tempfile, logging, concurrent.futures
+
+The code should:
+1. Include proper documentation and usage examples for each function
+2. Handle exceptions gracefully with meaningful error messages
+3. Track both time and memory usage in all performance monitoring
+4. Be optimized specifically for Windows environments
+5. Support both procedural and object-oriented usage patterns
+6. Prioritize memory efficiency for large data operations
+7. Include a complete usage example at the end showing a typical data processing workflow
+
+Please organize the code with classes where appropriate and functions where simpler approaches suffice. Ensure backward compatibility with Python 3.6+. 
